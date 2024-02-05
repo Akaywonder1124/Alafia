@@ -17,8 +17,8 @@ export default function Footer() {
   ];
   return (
     <section className="bg-primary py-20 ">
-      <div className="max-w-[1200px] m-auto">
-        <div className="flex justify-between">
+      <div className="max-w-[1200px] m-auto px-4">
+        <div className="flex justify-between flex-wrap">
           <Logo />
           <ul className="flex gap-10">
             {socialIcon.map((icon, index) => (
@@ -30,7 +30,7 @@ export default function Footer() {
             ))}
           </ul>
         </div>
-        <div className="flex mt-20 gap-20 border-y-[1px] py-20">
+        <div className="flex mt-20 gap-20 border-y-[1px] py-20 flex-wrap">
           <div>
             <h3 className="text-white font-Outfit text-xl">About Alafia</h3>
             <p className="text-white font-Outfit mt-5 ">
