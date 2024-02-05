@@ -1,0 +1,74 @@
+:root {
+  --primary: #28574e;
+  --dark: #1e232f;
+  --light: #fff;
+}
+
+.nav {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8rem;
+}
+.openLinks {
+  width: 70px;
+  height: 30px;
+  color: white;
+  background: none;
+  cursor: pointer;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ulMobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+}
+
+.hoverText {
+  transition: 0.35s font-weight, 0.35s color;
+  cursor: pointer;
+}
+
+.hoverText:hover {
+  font-weight: 900;
+  color: #dbe8e5;
+}
+
+/* To the right */
+.hoverText:hover + .hoverText {
+  font-weight: 500;
+  color: #bdd8d3;
+}
+
+.hoverText:hover + .hoverText + .hoverText {
+  font-weight: 300;
+}
+
+/* To the left */
+.hoverText:has(+ .hoverText:hover) {
+  font-weight: 500;
+  color: #bdd8d3;
+}
+
+.hoverText:has(+ .hoverText + .hoverText:hover) {
+  font-weight: 300;
+}

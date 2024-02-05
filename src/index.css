@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: recoleta;
+  src: url(../static/font/recoleta/Recoleta-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: recoleta;
+  src: url(../static/font/recoleta/Recoleta-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: recoleta;
+  src: url(../static/font/recoleta/Recoleta-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: recoleta;
+  src: url(../static/font/recoleta/Recoleta-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: recoleta;
+  src: url(../static/font/recoleta/Recoleta-Black.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+@layer utilities {
+  .input-style {
+  }
+}
+@layer components {
+  .hero {
+    @apply bg-primary  bg-gradient-to-b from-primary from-75%  to-white to-20%;
+  }
+  .hero-image-container {
+    @apply bg-gradient-to-b from-[#487b71] from-10%  via-[#487b71]  to-white to-70%  p-6 rounded-[55px] max-sm:rounded-none drop-shadow-lg;
+  }
+  .hero-heading {
+    @apply font-recoleta font-medium text-[3.5rem] max-sm:text-[2.5rem] text-white max-w-[55%] max-lg:max-w-full leading-tight text-center;
+  }
+  .search-container {
+    @apply mb-28 mt-12 flex justify-center gap-4 w-full max-sm:flex-col items-center justify-center;
+  }
+  .search-bar {
+    @apply flex items-center p-5 rounded-[40px] bg-gradient-to-r from-transparent from-60%  to-[#289a84]  w-[40%] max-sm:w-full border-l-[1px] border-y-[1px];
+  }
+  .search-input {
+    @apply w-full pl-2 bg-transparent placeholder:text-white placeholder:font-Outfit focus:outline-none text-white;
+  }
+  .outfit-medium {
+    @apply font-Outfit font-medium text-[14px];
+  }
+  .pricing {
+    @apply bg-[#232834] md:w-[500px] md:h-[520px] rounded-[40px];
+  }
+  .lg-flex {
+    @apply lg:flex justify-center items-center py-4 gap-10;
+  }
+}

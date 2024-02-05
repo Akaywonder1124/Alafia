@@ -1,0 +1,36 @@
+:root {
+  --primary: #28574e;
+  --dark: #1e232f;
+  --light: #fff;
+}
+
+.cta {
+  background-color: var(--light);
+  padding: 1rem 2.5rem;
+  border-radius: 28px;
+  color: var(--primary);
+}
+
+.explore {
+  background-color: var(--light);
+  padding: 1rem 1.5rem;
+  border-radius: 32px;
+  color: var(--primary);
+}
+.pricing {
+  background-color: var(--primary);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 28px;
+}
+
+.download {
+  background-color: var(--dark);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 1rem 3rem;
+}
