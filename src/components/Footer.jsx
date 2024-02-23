@@ -33,7 +33,7 @@ export default function Footer() {
         <div className="flex mt-20 gap-20 border-y-[1px] py-20 flex-wrap">
           <div>
             <h3 className="text-white font-Outfit text-xl">About Alafia</h3>
-            <p className="text-white font-Outfit mt-5 ">
+            <p className="text-white font-Outfit mt-5 w-[400px]">
               By using Alafia, patients can connect with licensed healthcare
               providers through secure video consultations, get prescriptions,
               and access medical advice from the comfort of their homes. With

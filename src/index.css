@@ -7,6 +7,37 @@ body {
   overflow-x: hidden;
 }
 
+.nav-btn {
+  visibility: hidden;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  header .nav-btn {
+    visibility: visible;
+    color: white;
+    opacity: 1;
+  }
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #289a84;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    transition: 1s;
+    z-index: 100;
+    width: 100vh;
+    transform: translateY(-100vh);
+  }
+  header .responsive_nav {
+    transform: none;
+  }
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
