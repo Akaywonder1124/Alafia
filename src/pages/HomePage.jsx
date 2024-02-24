@@ -48,7 +48,7 @@ export default function HomePage() {
       <Hero />
       <main className="max-w-[1600px] m-auto">
         <section
-          className="flex flex-row justify-center gap-28 items-center mt-36 flex-wrap section"
+          className="flex flex-row justify-center gap-28 items-center mt-36 flex-wrap section max-sm:px-5"
           ref={section1}
         >
           <h1 className="text-4xl font-recoleta text-primary w-[550px] leading-normal">
@@ -69,9 +69,9 @@ export default function HomePage() {
           className="flex justify-center mt-[15%] mb-[10%]"
           ref={section2}
         >
-          <div className="bg-dark w-3/4 flex justify-evenly items-center rounded-[40px] h-[400px] max-lg:h-[300px] px-16">
-            <div className=" max-xl:pl-4">
-              <h1 className="font-recoleta text-3xl text-white lg:w-3/4 mb-5 leading-normal">
+          <div className="bg-dark w-3/4 flex justify-evenly items-center rounded-[40px] max-sm:w-full h-[400px] max-lg:h-[300px] px-16">
+            <div className=" max-xl:pl-4 ">
+              <h1 className="font-recoleta text-3xl  text-white lg:w-3/4 mb-5 leading-normal">
                 Teleconsult Our Patient Advisor
               </h1>
               <Button type="cta" label="Book a Call" />

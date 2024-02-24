@@ -74,7 +74,7 @@ export default function TreatmentList() {
         <h1 className="font-recoleta text-primary text-4xl max-w-sm py-10 ">
           Explore Treatments across specialties
         </h1>
-        <div className="grid max-md:grid-cols-2  grid-cols-5 max-sm:grid-cols-1 gap-10 justify-center items-center ">
+        <div className="grid grid-cols-5 max-sm:grid-cols-1 max-lg:grid-cols-3 gap-10 justify-center items-center max-xl:grid-cols-3">
           {treatments.map((treatment) => (
             <div
               key={treatment.label}
