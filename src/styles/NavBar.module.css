@@ -4,6 +4,11 @@
   --light: #fff;
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .nav {
   padding-top: 2rem;
   display: flex;

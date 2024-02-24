@@ -69,7 +69,7 @@ export default function TreatmentList() {
     },
   ];
   return (
-    <section>
+    <section className="flex justify-center items-center">
       <div className="p-36 flex flex-col items-start justify-center">
         <h1 className="font-recoleta text-primary text-4xl max-w-sm py-10 ">
           Explore Treatments across specialties
